@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    position: relative;
+    height: 100%;
+}
+.slider{
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: #30336b;
+    z-index: 100;
+    border-right: 3px solid #80808045;
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+    left: 0;
+    top: 0;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.slider .close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.myimg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.myimg img{
+    display: block;
+    height: 100px;
+    background: #FFC107;
+    border-radius: 50%;
+}
+.sliderUl{
+    list-style: none;
+    border-top: 2px solid #80808045;
+}
+.sliderUl li{
+    border-bottom: 2px solid #80808045;
+    padding: 14px;
+    cursor: pointer;
+    transition: .4s;
+}
+.sliderUl li:hover{
+    background: #FFC107;
+
+}
+.icon{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 50px;
+    background: #8a2be28a;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.icon:hover{
+    background: rgb(92, 1, 177);
+}
+.fristSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    justify-content: center;
+    background: #30336b;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.fristSection button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: blueviolet;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: .4s;
+}
+.fristSection button:hover{
+    background: rgb(93, 11, 171);
+    box-shadow: 0 0 0 3px white;
+    
+}
+.secondSection{
+    padding: 80px 0 40px 80px;
+    width: 100%;
+}
+h2{
+    margin: 20px 0;
+}
+p{
+    margin-bottom: 20px;
+}
+.benefits ul{
+    margin: 25px 0 25px 35px;
+}
+.popupForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #9c27b061;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.show{
+    display: flex;
+}
+.formBox{
+    background: #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    background: #30336b;
+    color: white;
+    font-size: 20px;
+    padding: 14px 10px 14px 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upText{
+padding: 0;
+margin: 0;
+}
+.close{
+    font-size: 30px;
+    cursor: pointer;
+}
+.lower{
+    padding: 20px;
+}
+form{
+    text-transform: capitalize;
+}
+form div{
+    margin-bottom: 20px;
+    width: 100%;
+}
+label{
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+}
+#formSent{
+    background: rgb(93, 11, 171);
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:780px) {
+    .fristSection {
+        padding: 100px 50px;
+    }
+    .secondSection {
+        padding: 80px 20px 40px 20px;
+    }
+}
